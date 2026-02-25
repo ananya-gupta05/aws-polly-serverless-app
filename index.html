@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Polly Narrator</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- PDF.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Polly Narrator 🎙️</h1>
+    <p>Upload TXT or PDF and convert it to speech</p>
+
+    <div id="dropZone" class="drop-zone">
+        Click or Drag & Drop TXT / PDF file here
+        <input type="file" id="fileInput" accept=".txt,.pdf" hidden>
+    </div>
+
+    <button id="convertBtn">Convert to Speech</button>
+
+    <p id="status"></p>
+
+    <audio id="audioPlayer" controls style="display:none;"></audio>
+    <br>
+    <a id="downloadLink" style="display:none;">Download MP3</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
