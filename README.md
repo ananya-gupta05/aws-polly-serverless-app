@@ -1,19 +1,21 @@
-# 🎙️ Serverless Text-to-Speech Web Application (AWS Polly)
+# Serverless Text-to-Speech Web Application (AWS Polly)
 
-## 🚀 Overview
+## Overview
 A fully serverless web application that converts TXT and PDF files into speech using Amazon Polly.
 
-This project demonstrates a modern cloud-native architecture using AWS managed services.
+This project demonstrates a cloud-native architecture using AWS managed services.
 
 Users can:
-- Upload a `.txt` or `.pdf` file
+- Upload a .txt or .pdf file
 - Convert extracted text into speech
 - Stream the generated MP3
 - Download the audio file
 
 ---
 
-## 🏗️ Architecture
+## Architecture
+
+![Architecture Diagram](architecture-diagram.png)
 
 ### Frontend Layer
 - Amazon S3 (Static Website Hosting)
@@ -41,7 +43,9 @@ User
 
 ---
 
-## 🧠 Key Concepts Implemented
+## Technical Implementation
+
+Key concepts implemented:
 
 - Serverless architecture
 - Binary response handling via API Gateway
@@ -53,7 +57,7 @@ User
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 Frontend:
 - HTML
@@ -74,49 +78,28 @@ Cloud Services:
 - Amazon Polly
 - Amazon CloudWatch
 
-Region:
+Deployment Region:
 ap-south-1 (Mumbai)
 
 ---
 
-## 📦 Features
+## Monitoring
 
-✔ Drag & Drop file upload  
-✔ Click-to-upload support  
-✔ PDF text extraction  
-✔ Real-time MP3 streaming  
-✔ Download generated audio  
-✔ Fully serverless — no EC2 or servers  
-
----
-
-## 📊 Monitoring
-
-Polly usage tracked via:
+Polly usage is tracked via:
 
 CloudWatch → Metrics → RequestCharacters
 
 ---
 
-## 🔐 Security
+## Learning Outcomes
 
-- IAM Role with scoped permissions for Lambda
-- API Gateway CORS configuration
-- CloudFront HTTPS delivery
-
----
-
-## 🎯 Learning Outcomes
-
-This project demonstrates:
-
-- Designing and implementing a complete serverless application
-- Handling binary data in API Gateway
-- Integrating AI services (Amazon Polly)
-- Debugging CORS and Lambda invocation permissions
-- Deploying static frontend via CDN
+- Designed and implemented a complete serverless application
+- Integrated AI services (Amazon Polly)
+- Handled binary data via API Gateway
+- Debugged CORS and Lambda invocation permissions
+- Deployed static frontend via CDN
 
 ---
 
-## 👩‍💻 Author
+## Author
 Ananya Gupta
